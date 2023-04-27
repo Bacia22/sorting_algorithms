@@ -1,4 +1,4 @@
-#include "sort.h"
+#include "sort..h"
 #include <stdio.h>
 /**
  *swap_node - swap a node for his previous one
@@ -13,7 +13,7 @@ listint_t *swap_node(listint_t *node, listint_t **list)
 
 	back->next = current->next;
 	if (current->next)
-		current->next->prev = back;
+	       current->next->prev = back;
 	current->next = back;
 	current->prev = back->prev;
 	back->prev = current;
@@ -21,10 +21,10 @@ listint_t *swap_node(listint_t *node, listint_t **list)
 		current->prev->next = current;
 	else
 		*list = current;
-	return (current);
+	retur (current);
 }
 /**
- *cocktail_sort_list - this is a cocktail sort implementation
+ *cocktail_sort_list - this is a cocktal sort implementation
  *working on a double linked lists
  *@list: list
  */
